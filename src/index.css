@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  @apply font-bodyFont bg-backgroundColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply capitalize font-headingFont tracking-wider text-textColor;
+}
+
+p, button {
+  @apply tracking-wider leading-6;
+}
+
+.showBigSidebar {
+  margin-left: -256px;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.interview {
+  @apply bg-lightBlue text-darkBlue;
+}
+
+.pending {
+  background: rgb(252, 239, 199);
+  color: rgb(233, 185, 73);
+}
+
+.declined {
+  background: rgb(255, 238, 238);
+  color: rgb(214, 106, 106);
+}
+
+.page {
+@apply py-1 px-4 bg-primary100 text-primary500 rounded font-extrabold text-xl;
+}
+
+.active {
+@apply bg-primary500 text-white}
+
+.pageBtn {
+@apply bg-white text-primary500 font-semibold hover:bg-primary500 hover:text-white rounded py-2 px-4 shadow-sm flex items-center;
+}
+
+
+
