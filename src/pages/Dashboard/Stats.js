@@ -14,6 +14,7 @@ export default function Stats() {
 
   useEffect(() => {
     dispatch(showStats())
+    // eslint-disable-next-line
   }, [])
 
   if(isLoading) {

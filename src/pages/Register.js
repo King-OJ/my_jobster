@@ -74,7 +74,7 @@ export default function Register() {
           <button type="button" className="mt-8 bg-primary200 text-primary600 text-center py-2 w-full rounded text-md shadow-md hover:bg-primary600 hover:text-white hover:shadow-lg transition duration-500" disabled={isLoading} onClick={()=>dispatch(loginUser({email: 'testUser@test.com', password: 'secret'}))}>{isLoading? 'Loading...' : 'Demo App'}</button>
 
           <div className='mt-6 text-textColor'>{values.isMember ? 'Not a member yet?' : 'Already a member?'}
-          <a className='ml-1 text-primary500 cursor-pointer' onClick={()=>setValues({...values, isMember: !values.isMember})}>{values.isMember? 'Register' : 'Login'}</a>
+          <button type='button' className='ml-1 text-primary500 cursor-pointer' onClick={()=>setValues({...values, isMember: !values.isMember})}>{values.isMember? 'Register' : 'Login'}</button>
           </div>
         </form>
       </div>

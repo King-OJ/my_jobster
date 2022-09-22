@@ -18,7 +18,6 @@ const initialState = {
   page: 1,
   numOfPages: 1,
   totalJobs: 0,
-  numOfPages: 1,
   ...initialFiltersState
 }
 

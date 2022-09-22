@@ -12,8 +12,9 @@ export default function JobsContainer() {
 
   useEffect(() => {
 
-    dispatch(getAllJobs())
-
+    dispatch(getAllJobs());
+    
+    // eslint-disable-next-line
   }, [page, searchStatus, searchType, sort, search])
 
   if (isLoading) {

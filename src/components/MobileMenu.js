@@ -1,6 +1,6 @@
 import React from 'react'
 import { IoBarChartSharp, IoBriefcase, IoCloseSharp, IoDuplicate, IoPersonSharp } from 'react-icons/io5'
-import { Link, NavLink } from 'react-router-dom'
+import {  NavLink } from 'react-router-dom'
 import logo from '../assets/images/logo.svg'
 
 export default function MobileMenu() {
